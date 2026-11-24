@@ -1,0 +1,17 @@
+{
+  "gpu": "Tesla T4",
+  "torch": "2.11.0+cu130",
+  "train_seconds": 8527.30105805397,
+  "gpu_hours": 2.3686947383483252,
+  "steps": {
+    "main": 34800
+  },
+  "peak_memory_gb": 8.86675712,
+  "parameters": 6005651,
+  "amp": true,
+  "run_id": "core-diffusion-p0.30-s2",
+  "family": "diffusion",
+  "group": "core",
+  "p": 0.3,
+  "seed": 2
+}

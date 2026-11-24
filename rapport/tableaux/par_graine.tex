@@ -1,0 +1,17 @@
+\begin{tabular}{@{}lcrrrrlr@{}}
+\toprule
+Modèle & graine & floue (\%) & nette (\%) & autre (\%) & images nettes & $\hat p$ [IC 95 \%] & MSE / plancher \\
+\midrule
+Régression & 0 & 98,2 & 0,4 & 1,4 & 8 & -- & 1,011 \\
+Régression & 1 & 96,7 & 1,9 & 1,4 & 39 & -- & 1,016 \\
+Régression & 2 & 97,9 & 0,7 & 1,5 & 13 & -- & 1,013 \\
+\addlinespace
+Diffusion, $n=3$ & 0 & 4,4 & 91,2 & 4,3 & 1825 & 0,327 [0,306 ; 0,349] & 2,044 \\
+Diffusion, $n=3$ & 1 & 5,4 & 89,1 & 5,5 & 1783 & 0,255 [0,235 ; 0,276] & 1,896 \\
+Diffusion, $n=3$ & 2 & 3,7 & 91,6 & 4,7 & 1833 & 0,358 [0,336 ; 0,380] & 2,115 \\
+\addlinespace
+Jetons, $K=256$ & 0 & 0,0 & 48,2 & 51,8 & 964 & 0,258 [0,231 ; 0,287] & 3,396 \\
+Jetons, $K=256$ & 1 & 0,0 & 31,3 & 68,7 & 626 & 0,260 [0,226 ; 0,297] & 3,961 \\
+Jetons, $K=256$ & 2 & 0,0 & 61,0 & 39,1 & 1219 & 0,313 [0,287 ; 0,340] & 3,025 \\
+\bottomrule
+\end{tabular}

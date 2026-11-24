@@ -1,0 +1,17 @@
+{
+  "gpu": "Tesla T4",
+  "torch": "2.11.0+cu130",
+  "train_seconds": 8933.662879705429,
+  "gpu_hours": 2.481573022140397,
+  "steps": {
+    "main": 34800
+  },
+  "peak_memory_gb": 8.855373312,
+  "parameters": 5872771,
+  "amp": true,
+  "run_id": "paxis-regression-p0.10-s0",
+  "family": "regression",
+  "group": "p_axis",
+  "p": 0.1,
+  "seed": 0
+}

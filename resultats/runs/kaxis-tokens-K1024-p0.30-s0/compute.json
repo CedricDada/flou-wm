@@ -1,0 +1,18 @@
+{
+  "gpu": "Tesla T4",
+  "torch": "2.11.0+cu130",
+  "train_seconds": 3739.276200771332,
+  "gpu_hours": 1.0386878335475922,
+  "steps": {
+    "vq": 13920,
+    "gpt": 20880
+  },
+  "peak_memory_gb": 14.60256768,
+  "parameters": 6585155,
+  "amp": true,
+  "run_id": "kaxis-tokens-K1024-p0.30-s0",
+  "family": "tokens",
+  "group": "k_axis",
+  "p": 0.3,
+  "seed": 0
+}

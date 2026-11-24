@@ -1,0 +1,327 @@
+{
+ "H0a": {
+  "status": "réussi",
+  "alpha_mae": 0.0010484329686256811,
+  "pures_bien_classees": 0.99475,
+  "rho_max": 0.15988816883972015,
+  "bruit": 0.01
+ },
+ "H0b": {
+  "status": "réussi",
+  "rapports_en_esperance": [
+   1.0109023156976644,
+   1.0162625083548187,
+   1.0130514879309809
+  ],
+  "rapports_tires": [
+   0.9856385607132898,
+   0.9951012741530062,
+   0.9901911794819664
+  ],
+  "fuite_detectee": false,
+  "lecture": "sous-apprentissage si > 1,10 ; fuite d'information si le rapport tiré est nettement < 1"
+ },
+ "H0c": {
+  "status": "réussi",
+  "flou": 0.0,
+  "ic95": [
+   0.0,
+   0.0018427397934059364
+  ]
+ },
+ "H0d": {
+  "status": "réussi",
+  "flou": 0.0,
+  "ic95": [
+   0.0,
+   0.0018427397934059364
+  ]
+ },
+ "H0d-diffusion(n=1)": {
+  "status": "réussi",
+  "flou": 0.0,
+  "ic95": [
+   0.0,
+   0.0018427397934059364
+  ]
+ },
+ "H1": {
+  "status": "confirmée",
+  "flou_regression": [
+   0.982,
+   0.967,
+   0.979
+  ],
+  "flou_diffusion_n3": [
+   0.044,
+   0.054,
+   0.037
+  ],
+  "nettes_diffusion_n3": [
+   0.9125,
+   0.8915,
+   0.9165
+  ],
+  "moyenne_flou_regression": 0.976,
+  "moyenne_nettes_diffusion_n3": 0.9068333333333333,
+  "n_graines": 3,
+  "regle": "confirmée si flou_reg > 50 % et nettes_diff(n=3) > 90 % ; réfutée si flou_reg < 30 % ou flou_diff(n=3) > 10 %"
+ },
+ "H2a": {
+  "status": "réfutée",
+  "ecart_moyen_points": -4.500000000000001,
+  "seuil_apparie_en_sd": 4.41603901253421,
+  "ratio_en_sd": 5.266851623825876,
+  "flou_n1": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "flou_n3": [
+   0.044,
+   0.054,
+   0.037
+  ],
+  "n_graines": 3,
+  "regle": "confirmée si écart >= 10 points et > 4,42 s_d (Bonferroni, k = 3) ; réfutée si écart < 10 points"
+ },
+ "H2b": {
+  "status": "non concluante",
+  "erreur_absolue": [
+   0.0271232876712329,
+   0.04481211441390914,
+   0.05788325150027279
+  ],
+  "images_nettes": [
+   1825,
+   1783,
+   1833
+  ],
+  "p_hat_par_n": {
+   "n=1": [
+    NaN,
+    NaN,
+    NaN
+   ],
+   "n=3": [
+    0.3271232876712329,
+    0.25518788558609085,
+    0.3578832515002728
+   ],
+   "n=20": [
+    0.3236363636363636,
+    0.24987066735644076,
+    0.3316062176165803
+   ]
+  },
+  "p": 0.3,
+  "regle": "confirmée si |p̂-p| < 0,05 pour chaque graine avec >= 1000 images nettes ; réfutée si >= 0,05 pour chaque graine"
+ },
+ "H3a": {
+  "status": "non concluante",
+  "rappel_K64": [
+   0.9835,
+   0.983,
+   0.9765
+  ],
+  "rappel_K1024": [
+   0.987,
+   0.983,
+   0.981
+  ],
+  "rappel_K256": [
+   0.983,
+   0.979,
+   0.984
+  ],
+  "ecart_moyen": -0.002666666666666706,
+  "ratio_en_sd_poolees": 0.7606123016664577,
+  "seuil": 3.233968620970887,
+  "ordre_monotone_des_moyennes": true,
+  "regle": "confirmée si rappel(64) < rappel(1024) de plus de 3,23 écarts-types poolés (Bonferroni, k = 3)"
+ },
+ "H3b": {
+  "status": "exploratoire (sans seuil)",
+  "n_points": 9,
+  "spearman_rappel_qualite16": 0.5933055656682091,
+  "spearman_mse_qualite16": -0.9666666666666667,
+  "points": [
+   {
+    "K": 256,
+    "seed": 0,
+    "rappel": 0.983,
+    "mse": 0.003321443591738885,
+    "qualite16": 0.044
+   },
+   {
+    "K": 256,
+    "seed": 1,
+    "rappel": 0.979,
+    "mse": 0.0039060405035798765,
+    "qualite16": 0.012
+   },
+   {
+    "K": 256,
+    "seed": 2,
+    "rappel": 0.984,
+    "mse": 0.0029371131142085084,
+    "qualite16": 0.16
+   },
+   {
+    "K": 1024,
+    "seed": 0,
+    "rappel": 0.987,
+    "mse": 0.0026376011030961395,
+    "qualite16": 0.22
+   },
+   {
+    "K": 1024,
+    "seed": 1,
+    "rappel": 0.983,
+    "mse": 0.0028981359828453867,
+    "qualite16": 0.204
+   },
+   {
+    "K": 1024,
+    "seed": 2,
+    "rappel": 0.981,
+    "mse": 0.0028411824688328777,
+    "qualite16": 0.192
+   },
+   {
+    "K": 64,
+    "seed": 0,
+    "rappel": 0.9835,
+    "mse": 0.0030900430717536436,
+    "qualite16": 0.06
+   },
+   {
+    "K": 64,
+    "seed": 1,
+    "rappel": 0.983,
+    "mse": 0.0033795592099901284,
+    "qualite16": 0.032
+   },
+   {
+    "K": 64,
+    "seed": 2,
+    "rappel": 0.9765,
+    "mse": 0.0037432810112299187,
+    "qualite16": 0.036
+   }
+  ]
+ },
+ "H0e": {
+  "status": "réussi",
+  "accord": 1.0,
+  "images": 30000,
+  "contacts": 887,
+  "erreur_max_lecteur_doux": 0.0038496358320116997
+ },
+ "H0f": {
+  "status": "réussi",
+  "contacts_par_partie": 0.3,
+  "score": 0.8,
+  "score_bot_aleatoire": -4.1,
+  "score_bot_expert": 1.75,
+  "gain": 4.8999999999999995,
+  "parties": 20,
+  "reglages": {
+   "candidates": 32,
+   "horizon": 8,
+   "samples": 4,
+   "lam": 0.5,
+   "reader": "soft",
+   "k_ctx": 4,
+   "max_rows": 2048
+  }
+ },
+ "H4a": {
+  "status": "confirmée",
+  "erreur_regression": [
+   0.3015094339622641,
+   0.3015094339622641,
+   0.3030188679245283
+  ],
+  "erreur_diffusion_n3": [
+   0.1557547169811321,
+   0.1740566037735849,
+   0.16999999999999998
+  ],
+  "ecart_moyen": 0.1354088050314465,
+  "ratio_en_sd_poolees": 19.841316623818763,
+  "seuil": 2.266957935527523,
+  "regle": "confirmée si écart >= 0.10 et > 2,27 écarts-types poolés ; réfutée si écart < 0.10"
+ },
+ "H4b": {
+  "status": "confirmée",
+  "erreur_regression": [
+   0.021526883661706835,
+   0.03648084232228585,
+   0.03409101589635148
+  ],
+  "erreur_diffusion_n3": [
+   0.14974028963889385,
+   0.1633770370951668,
+   0.16269468028047487
+  ],
+  "ecart_moyen": -0.12790442171139713,
+  "regle": "confirmée si E(régression) <= E(diffusion) + 0.02 ; réfutée si > + 0.05 ; entre les deux : non concluante"
+ },
+ "H4c": {
+  "status": "exploratoire (sans seuil)",
+  "erreur_moyenne_par_horizon": {
+   "regression": {
+    "k=1": {
+     "doux": 0.03069958062678139,
+     "seuil": 0.30201257861635217
+    },
+    "k=3": {
+     "doux": 0.16628478596187923,
+     "seuil": 0.3465393794749403
+    },
+    "k=5": {
+     "doux": 0.3209313734259373,
+     "seuil": 0.4499396135265701
+    }
+   },
+   "diffusion": {
+    "k=1": {
+     "doux": 0.1586040023381785,
+     "seuil": 0.16660377358490566
+    },
+    "k=3": {
+     "doux": 0.18337490750847732,
+     "seuil": 0.18850437549721558
+    },
+    "k=5": {
+     "doux": 0.23248955569422025,
+     "seuil": 0.2365942028985507
+    }
+   },
+   "tokens": {
+    "k=1": {
+     "doux": 0.22077501514851064,
+     "seuil": 0.22386792452830187
+    },
+    "k=3": {
+     "doux": 0.25150539037156094,
+     "seuil": 0.25948687350835326
+    },
+    "k=5": {
+     "doux": 0.33667534675313254,
+     "seuil": 0.3431914251207729
+    }
+   }
+  }
+ },
+ "H5a": {
+  "status": "non évaluable",
+  "raison": "moins de 2 graines de régression ou de diffusion (n = 3) évaluées au niveau 2"
+ },
+ "H5b": {
+  "status": "non évaluable",
+  "raison": "moins de 4 runs du cœur avec à la fois eval.json et planning.json"
+ },
+ "_simulation": false
+}

@@ -1,0 +1,17 @@
+{
+  "gpu": "Tesla T4",
+  "torch": "2.11.0+cu130",
+  "train_seconds": 8400.475217103958,
+  "gpu_hours": 2.333465338084433,
+  "steps": {
+    "main": 34800
+  },
+  "peak_memory_gb": 8.857476096,
+  "parameters": 5873635,
+  "amp": true,
+  "run_id": "control-oracle-p0.30-s0",
+  "family": "oracle",
+  "group": "control",
+  "p": 0.3,
+  "seed": 0
+}

@@ -1,0 +1,12 @@
+# Fichiers de compilation LaTeX (le PDF, lui, est versionné)
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.run.xml
+*.toc
+*-SAVE-ERROR

@@ -1,0 +1,18 @@
+{
+  "batch_size": 64,
+  "lr": 0.0002,
+  "weight_decay": 0.0,
+  "warmup": 500,
+  "min_lr_frac": 0.1,
+  "grad_clip": 1.0,
+  "amp": true,
+  "ckpt_every": 1000,
+  "log_every": 100,
+  "val_every": 2000,
+  "ema": 0.0,
+  "seed": 0,
+  "run_id": "control-diffusion-p0.00-s0",
+  "family": "diffusion",
+  "group": "control",
+  "p": 0.0
+}

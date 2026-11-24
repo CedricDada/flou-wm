@@ -1,0 +1,17 @@
+{
+  "gpu": "Tesla T4",
+  "torch": "2.11.0+cu130",
+  "train_seconds": 8462.537163257599,
+  "gpu_hours": 2.350704767571555,
+  "steps": {
+    "main": 34800
+  },
+  "peak_memory_gb": 8.855373312,
+  "parameters": 5872771,
+  "amp": true,
+  "run_id": "core-regression-p0.30-s2",
+  "family": "regression",
+  "group": "core",
+  "p": 0.3,
+  "seed": 2
+}

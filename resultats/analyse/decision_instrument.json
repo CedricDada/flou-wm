@@ -1,0 +1,105 @@
+{
+ "p": 0.3,
+ "n_states": 3000,
+ "n_selected": 1168,
+ "ks": [
+  1,
+  3,
+  5
+ ],
+ "m": 8,
+ "ambiguous_share": {
+  "k=1": 0.08833333333333333,
+  "k=3": 0.13966666666666666,
+  "k=5": 0.184
+ },
+ "h0e": {
+  "n_images": 30000,
+  "n_contacts": 887,
+  "agreement": 1.0,
+  "soft_max_abs_err": 0.0038496358320116997,
+  "agent_found": 1.0,
+  "threshold": 0.99,
+  "horizon": 5,
+  "pass": true
+ },
+ "expected": [
+  {
+   "prédicteur factice": "régression idéale (image moyenne)",
+   "doux_k1": 0.001143941967841261,
+   "seuil_k1": 0.3,
+   "doux_k3": 0.0013129735880517274,
+   "seuil_k3": 0.34510739856801903,
+   "doux_k5": 0.0017039754776614784,
+   "seuil_k5": 0.4472826086956522,
+   "théorie_k1_seuil": 0.30000000000000004
+  },
+  {
+   "prédicteur factice": "échantillonneur net calibré, m = 8",
+   "doux_k1": 0.13226248602976345,
+   "seuil_k1": 0.13226415094339622,
+   "doux_k3": 0.15656678370380703,
+   "seuil_k3": 0.156563245823389,
+   "doux_k5": 0.20580229831239646,
+   "seuil_k5": 0.20579710144927535,
+   "théorie_k1_seuil": 0.13341396599999994
+  },
+  {
+   "prédicteur factice": "échantillonneur net, biais d'Euler n = 3 (q = 0.188), m = 8",
+   "doux_k1": 0.15103497391451814,
+   "seuil_k1": 0.15103773584905664,
+   "doux_k3": 0.17464490478470432,
+   "seuil_k3": 0.17464200477326972,
+   "doux_k5": 0.22408502269366473,
+   "seuil_k5": 0.22409420289855075,
+   "théorie_k1_seuil": 0.15244709903608716
+  }
+ ],
+ "h0f": {
+  "planner": {
+   "model": "vrai-jeu",
+   "p": 0.3,
+   "n_games": 20,
+   "steps": 100,
+   "seed": 0,
+   "config": {
+    "candidates": 32,
+    "horizon": 8,
+    "samples": 4,
+    "lam": 0.5,
+    "reader": "soft",
+    "k_ctx": 4,
+    "max_rows": 2048
+   },
+   "score": 0.8,
+   "score_sd": 0.7677718959499145,
+   "contacts": 0.3,
+   "contacts_sd": 0.5712405705774793,
+   "pickups": 1.1,
+   "pickups_sd": 0.5525062514530825,
+   "agent_lost": 0.0,
+   "predictions": 2048000,
+   "seconds": 63.700584173202515
+  },
+  "random": {
+   "model": "bot-random",
+   "n_games": 20,
+   "steps": 100,
+   "score": -4.1,
+   "contacts": 4.15,
+   "pickups": 0.05
+  },
+  "expert": {
+   "model": "bot-expert",
+   "n_games": 20,
+   "steps": 100,
+   "score": 1.75,
+   "contacts": 0.0,
+   "pickups": 1.75
+  },
+  "gain_over_random": 4.8999999999999995,
+  "max_contacts": 0.5,
+  "min_gain": 3.0,
+  "pass": true
+ }
+}

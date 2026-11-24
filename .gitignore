@@ -1,0 +1,48 @@
+__pycache__/
+*.pyc
+*.egg-info/
+.pytest_cache/
+.venv/
+data/*
+docs/cours/*
+docs/projet/*
+runs/*
+!data/README.md
+!data/.gitkeep
+!runs/README.md
+!runs/.gitkeep
+# Résultats de mesure : produits par les scripts, jamais versionnés (seul le README du dossier l'est).
+reports/*
+!reports/README.md
+# Répétition générale : résultats SIMULÉS (scripts/dry_run.py), à ne jamais committer.
+data_dryrun/
+runs_dryrun/
+*.npz
+*.pt
+*.ckpt
+
+# Copie locale de l'état Kaggle (téléchargement) : le Dataset flou-wm-etat fait foi.
+flou_etat/
+flou-etat/
+
+# Résultats d'une session Kaggle, transmis pour lecture : ils vivent sur Kaggle, jamais dans le dépôt.
+log.txt
+notebooks/flou_kaggle-result.ipynb
+docs/animations
+# Identifiants (Azure Speech, etc.) : jamais dans git.
+.env
+
+# Résultats de la campagne : copie légère versionnée (sans les poids), pour refaire le rapport sans GPU.
+!resultats/runs/*/eval_arrays.npz
+
+# Documents de travail, notebooks et liste de tâches : gardés en local, hors du dépôt public.
+docs/
+notebooks/
+TODO.md
+
+# Rendus des animations (seuls les GIF publiés, dans assets/, sont versionnés).
+animations/rendus/
+animations/media/
+animations/__pycache__/
+animations/**/__pycache__/
+animations/donnees/

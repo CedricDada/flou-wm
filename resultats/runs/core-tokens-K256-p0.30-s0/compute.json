@@ -1,0 +1,18 @@
+{
+  "gpu": "Tesla T4",
+  "torch": "2.11.0+cu130",
+  "train_seconds": 3603.1014564037323,
+  "gpu_hours": 1.0008615156677034,
+  "steps": {
+    "vq": 13920,
+    "gpt": 20880
+  },
+  "peak_memory_gb": 14.601253376,
+  "parameters": 6043715,
+  "amp": true,
+  "run_id": "core-tokens-K256-p0.30-s0",
+  "family": "tokens",
+  "group": "core",
+  "p": 0.3,
+  "seed": 0
+}

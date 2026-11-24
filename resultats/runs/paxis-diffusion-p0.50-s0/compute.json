@@ -1,0 +1,17 @@
+{
+  "gpu": "Tesla T4",
+  "torch": "2.11.0+cu130",
+  "train_seconds": 9243.53449177742,
+  "gpu_hours": 2.567648469938172,
+  "steps": {
+    "main": 34800
+  },
+  "peak_memory_gb": 8.935975424,
+  "parameters": 6005651,
+  "amp": true,
+  "run_id": "paxis-diffusion-p0.50-s0",
+  "family": "diffusion",
+  "group": "p_axis",
+  "p": 0.5,
+  "seed": 0
+}

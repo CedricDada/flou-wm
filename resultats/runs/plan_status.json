@@ -1,0 +1,15 @@
+{
+ "kaxis-tokens-K64-p0.30-s0": "évalué",
+ "kaxis-tokens-K1024-p0.30-s0": "évalué",
+ "kaxis-tokens-K64-p0.30-s1": "évalué",
+ "kaxis-tokens-K1024-p0.30-s1": "évalué",
+ "kaxis-tokens-K64-p0.30-s2": "évalué",
+ "kaxis-tokens-K1024-p0.30-s2": "évalué",
+ "grid-tokens-K256-g16-p0.30-s0": "évalué",
+ "paxis-regression-p0.10-s0": "évalué",
+ "paxis-diffusion-p0.10-s0": "évalué",
+ "paxis-tokens-K256-p0.10-s0": "évalué",
+ "paxis-regression-p0.50-s0": "évalué",
+ "paxis-diffusion-p0.50-s0": "évalué",
+ "paxis-tokens-K256-p0.50-s0": "évalué"
+}

@@ -1,0 +1,153 @@
+{
+ "run_id": "control-oracle-p0.30-s0",
+ "spec": {
+  "family": "oracle",
+  "group": "control",
+  "p": 0.3,
+  "seed": 0,
+  "K": null,
+  "grid": 8,
+  "k_ctx": 4,
+  "steps": 34800,
+  "batch_size": 64,
+  "lr": 0.0002,
+  "vq_fraction": 0.4,
+  "ema": 0.0,
+  "note": "H0c"
+ },
+ "rho_max": 0.15988816883972015,
+ "n_states": 2000,
+ "probe": "AnalyticProbe",
+ "variants": [
+  {
+   "variant": "",
+   "summary": {
+    "model": "control-oracle-p0.30-s0[]",
+    "p": 0.3,
+    "n_states": 2000,
+    "n_samples": 1,
+    "n": 2000,
+    "rho_max": 0.15988816883972015,
+    "eps": 0.2,
+    "counts": {
+     "nette-A": 566,
+     "nette-B": 1409,
+     "floue": 0,
+     "autre": 25
+    },
+    "blur": {
+     "k": 0,
+     "n": 2000,
+     "value": 0.0,
+     "ci_lo": 0.0,
+     "ci_hi": 0.0018427397934059364
+    },
+    "other": {
+     "k": 25,
+     "n": 2000,
+     "value": 0.0125,
+     "ci_lo": 0.008105230838877509,
+     "ci_hi": 0.018397493413938
+    },
+    "sharp": {
+     "k": 1975,
+     "n": 2000,
+     "value": 0.9875,
+     "ci_lo": 0.981602506586062,
+     "ci_hi": 0.9918947691611225
+    },
+    "p_hat": {
+     "k": 566,
+     "n": 1975,
+     "value": 0.28658227848101264,
+     "ci_lo": 0.2667163479064732,
+     "ci_hi": 0.3070837249460374
+    },
+    "p_abs_err": 0.013417721518987347,
+    "p_hat_covers_p": true,
+    "alpha_mean": 0.28604246563664276,
+    "rail": {
+     "exploratoire": true,
+     "lecture": "classifieur restreint au rail de la bifurcation (J9) ; aucun verdict n'en d\u00e9pend",
+     "counts": {
+      "nette-A": 572,
+      "nette-B": 1428,
+      "floue": 0,
+      "autre": 0
+     },
+     "blur": {
+      "k": 0,
+      "n": 2000,
+      "value": 0.0,
+      "ci_lo": 0.0,
+      "ci_hi": 0.0018427397934059364
+     },
+     "other": {
+      "k": 0,
+      "n": 2000,
+      "value": 0.0,
+      "ci_lo": 0.0,
+      "ci_hi": 0.0018427397934059364
+     },
+     "sharp": {
+      "k": 2000,
+      "n": 2000,
+      "value": 1.0,
+      "ci_lo": 0.998157260206594,
+      "ci_hi": 1.0
+     },
+     "p_hat": {
+      "k": 572,
+      "n": 2000,
+      "value": 0.286,
+      "ci_lo": 0.26627095776862286,
+      "ci_hi": 0.30635827394943
+     },
+     "alpha_mean": 0.28604246563664276
+    },
+    "mse": {
+     "sq_err_realized": 0.08100042704896163,
+     "sq_err_expected": 24.12173231230624,
+     "bayes_floor": 12.182999889965398,
+     "ratio_realized": 0.006648643829971477,
+     "ratio_expected": 1.9799501379109632,
+     "ratio_realized_se": 0.0013720497803680497,
+     "per_pixel_realized": 6.591831628333466e-06
+    },
+    "recall": {
+     "k": 1975,
+     "n": 2000,
+     "value": 0.9875,
+     "ci_lo": 0.981602506586062,
+     "ci_hi": 0.9918947691611225
+    },
+    "hallucination": {
+     "k": 0,
+     "n": 2000,
+     "value": 0.0,
+     "ci_lo": 0.0,
+     "ci_hi": 0.0018427397934059364
+    },
+    "off_palette": 2.197265625e-06,
+    "off_palette_truth": 0.0,
+    "block_edge_excess": -0.011801541914010331,
+    "block_edge_excess_truth": -0.01176472594246032
+   },
+   "chk_h0b": {
+    "ratio_expected": 1.9799501379109632,
+    "ratio_realized": 0.006648643829971477,
+    "leak_z": 723.9907548424111,
+    "fit_ok": false,
+    "leak": true,
+    "pass": false
+   },
+   "chk_blur5": {
+    "blur": 0.0,
+    "ci_hi": 0.0018427397934059364,
+    "threshold": 0.05,
+    "pass": true
+   },
+   "seconds": 9.512611865997314
+  }
+ ]
+}

@@ -1,0 +1,28 @@
+{
+  "device": "cuda",
+  "gpu": "Tesla T4",
+  "torch": "2.14.1+cu130",
+  "batch_size": 64,
+  "amp": true,
+  "time_steps": 15,
+  "seconds_per_step": {
+    "regression": 0.2331608772277832,
+    "oracle": 0.23480820655822754,
+    "diffusion": 0.23882654507954915,
+    "tokens-vq": 0.09372442563374837,
+    "tokens-gpt": 0.07119986216227213
+  },
+  "peak_memory_gb": {
+    "regression": 3.677217792,
+    "oracle": 3.6706816,
+    "diffusion": 3.67551744,
+    "tokens-vq": 1.512692224,
+    "tokens-gpt": 1.208944128
+  },
+  "inference_images_per_second": {
+    "regression": 714.5158727430055,
+    "diffusion": 242.37153783682706,
+    "tokens": 42.881503661875335
+  },
+  "note": "mesur\u00e9 sur de petites donn\u00e9es et sans le co\u00fbt des validations/checkpoints : pr\u00e9voir une marge (~10 %)"
+}

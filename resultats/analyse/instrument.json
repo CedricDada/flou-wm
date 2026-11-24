@@ -1,0 +1,162 @@
+{
+  "noise_sigma": 0.01,
+  "rho_max": 0.15988816883972015,
+  "quantile": 0.995,
+  "n_pairs": 8000,
+  "delta_range": [
+    6.713624701460798,
+    7.646371009791323
+  ],
+  "h0a": {
+    "rho_max": 0.15988816883972015,
+    "alpha_mae_mix": 0.0010484329686256811,
+    "pure_a_ok": 0.994875,
+    "pure_b_ok": 0.994625,
+    "rho_pure_q995": 0.159971278492099,
+    "rho_mix_max": 0.1667269972912107,
+    "pure_ok": 0.99475,
+    "mix_not_other": 0.99625,
+    "broken_flagged_other": 1.0,
+    "rho_broken_min": 0.3520697813821917,
+    "noise_sigma": 0.01,
+    "pass_alpha": true,
+    "pass_pure": true,
+    "pass": true
+  },
+  "sensitivity": {
+    "x0.5": {
+      "rho_max": 0.07994408441986008,
+      "pure_ok": 0.0,
+      "alpha_mae_mix": 0.0010484329686256811,
+      "broken_flagged_other": 1.0,
+      "pass": false
+    },
+    "x1": {
+      "rho_max": 0.15988816883972015,
+      "pure_ok": 0.99475,
+      "alpha_mae_mix": 0.0010484329686256811,
+      "broken_flagged_other": 1.0,
+      "pass": true
+    },
+    "x2": {
+      "rho_max": 0.3197763376794403,
+      "pure_ok": 1.0,
+      "alpha_mae_mix": 0.0010484329686256811,
+      "broken_flagged_other": 1.0,
+      "pass": true
+    }
+  },
+  "analytic_probe": {
+    "p=0.00": {
+      "agent": {
+        "found": 1.0,
+        "rmse": 0.0,
+        "r2": 1.0,
+        "max_err": 0.0
+      },
+      "obstacle": {
+        "found": 0.9995,
+        "rmse": 0.2289942920084705,
+        "r2": 0.999891572494338,
+        "max_err": 2.5
+      },
+      "enemy": {
+        "found": 1.0,
+        "rmse": 0.20166723127854588,
+        "r2": NaN,
+        "max_err": 1.1313708498984771
+      },
+      "gem": {
+        "found": 1.0,
+        "rmse": 0.0,
+        "r2": 1.0,
+        "max_err": 0.0
+      }
+    },
+    "p=0.10": {
+      "agent": {
+        "found": 1.0,
+        "rmse": 0.0,
+        "r2": 1.0,
+        "max_err": 0.0
+      },
+      "obstacle": {
+        "found": 0.9995,
+        "rmse": 0.2289942920084705,
+        "r2": 0.999891572494338,
+        "max_err": 2.5
+      },
+      "enemy": {
+        "found": 1.0,
+        "rmse": 0.20166723127854588,
+        "r2": NaN,
+        "max_err": 1.1313708498984771
+      },
+      "gem": {
+        "found": 1.0,
+        "rmse": 0.0,
+        "r2": 1.0,
+        "max_err": 0.0
+      }
+    },
+    "p=0.30": {
+      "agent": {
+        "found": 1.0,
+        "rmse": 0.0,
+        "r2": 1.0,
+        "max_err": 0.0
+      },
+      "obstacle": {
+        "found": 0.9995,
+        "rmse": 0.2289942920084705,
+        "r2": 0.999891572494338,
+        "max_err": 2.5
+      },
+      "enemy": {
+        "found": 1.0,
+        "rmse": 0.20166723127854588,
+        "r2": NaN,
+        "max_err": 1.1313708498984771
+      },
+      "gem": {
+        "found": 1.0,
+        "rmse": 0.0,
+        "r2": 1.0,
+        "max_err": 0.0
+      }
+    },
+    "p=0.50": {
+      "agent": {
+        "found": 1.0,
+        "rmse": 0.0,
+        "r2": 1.0,
+        "max_err": 0.0
+      },
+      "obstacle": {
+        "found": 0.9995,
+        "rmse": 0.2289942920084705,
+        "r2": 0.999891572494338,
+        "max_err": 2.5
+      },
+      "enemy": {
+        "found": 1.0,
+        "rmse": 0.20166723127854588,
+        "r2": NaN,
+        "max_err": 1.1313708498984771
+      },
+      "gem": {
+        "found": 1.0,
+        "rmse": 0.0,
+        "r2": 1.0,
+        "max_err": 0.0
+      }
+    }
+  },
+  "files": [
+    "data/p0.00/test_bifurcation.npz",
+    "data/p0.10/test_bifurcation.npz",
+    "data/p0.30/test_bifurcation.npz",
+    "data/p0.50/test_bifurcation.npz"
+  ],
+  "avertissement_taille": null
+}
